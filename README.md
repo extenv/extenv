@@ -1,5 +1,5 @@
 ## Hi, Senior 👋
-I'm Ivan Maulana, I'm interested in javascript with nodejs and now i'm still learning it. 
+I'm Ivan Maulana, I'm interested in nodejs with expressJS and now i'm still learning it. 
 ##  My Github stats
 ![Van GitHub stats](https://github-readme-stats.vercel.app/api?username=extenv&show_icons=true&theme=tokyonight)
 ##  Most used language
