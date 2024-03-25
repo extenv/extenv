@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Maulana | Extenv</title>
+    <link rel="stylesheet" href="../public/styles/style.css">
+    <script defer src="./scripts/alpinejs.js"></script>
+</head>
+
+<body x-data="{ darkMode: localStorage.getItem('dark') === 'true'} "
+    x-init="$watch('darkMode', val => localStorage.setItem('dark', val))" x-bind:class="{ 'dark': darkMode }"
+    class="dark:bg-[#161b22] bg-gray-50  select-none font-poppins">
+
+    <div class="flex justify-center w-full pt-5">
+        <label class="relative inline-flex items-center cursor-pointer">
+            <input id="switch" type="checkbox" class="sr-only peer" x-model="darkMode" type="checkbox"
+                @click="darkMode = !darkMode" />
+            <label for="switch" class="hidden"></label>
+            <div
+                class="peer h-6 w-11 rounded-full border bg-slate-200 after:absolute after:left-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-slate-800 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-green-300">
+            </div>
+        </label>
+    </div>
+
+    <section class="flex items-center justify-center h-screen">
+        <div class="text-gray-300   rounded-lg text-sm w-[350px] dark:bg-[#161b22] bg-white border border-[#3f3f46]">
+            <div class="flex flex-row w-full p-4 space-x-3">
+                <img class="w-20 h-20 rounded-2xl border-zinc-700" alt="Sebastián Ríos" src="./images/user.png" />
+                <div class="w-full text-gray-500">
+                    <p
+                        class="w-[200px] dark:text-white text-black  text-lg space-x-1 inline-block overflow-hidden whitespace-nowrap text-ellipsis">
+                        Ivan Maulana
+                    </p>
+                    <p>Tech Enthusiast</p>
+                </div>
+            </div>
+            <div class="w-full border-b border-[#3f3f46]"></div>
+            <div class="flex flex-col w-full p-4 space-y-4 text-sm text-gray-500">
+                <div class="flex items-center space-x-1">
+                    <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" fill="currentColor"
+                        aria-hidden="true">
+                        <path
+                            d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z">
+                        </path>
+                    </svg>
+                    <p class="text-black dark:text-white">Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="w-full border-b border-[#3f3f46]"></div>
+            <div class="flex-col w-full p-4 space-y-3 text-sm text-gray-500">
+                <button
+                    class="w-full text-white hover:bg-black bg-[#161b22] font-medium border-gray-600 border-2 rounded-3xl text-sm px-5 py-2.5 text-center flex flex-row items-center justify-center"
+                    type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 -ml-1" viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584c.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076c-.343-.93-.881-1.175-.881-1.175c-.734-.489.048-.489.048-.489c.783.049 1.224.832 1.224.832c.734 1.223 1.859.88 2.3.685c.048-.538.293-.88.489-1.076c-1.762-.196-3.621-.881-3.621-3.964c0-.88.293-1.566.832-2.153c-.05-.147-.343-.978.098-2.055c0 0 .685-.196 2.201.832c.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832c.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915c.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>Follow Github</span>
+                </button>
+                <button
+                    class="w-full text-white hover:bg-black bg-[#161b22] font-medium border-gray-600 border-2 rounded-3xl text-sm px-5 py-2.5 text-center flex flex-row items-center justify-center"
+                    type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 -ml-1" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                    </svg>
+                    <span>Follow Instagram</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
