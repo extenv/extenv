@@ -5,39 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Maulana | Extenv</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../public/styles/style.css">
     <script defer src="./scripts/alpinejs.js"></script>
 </head>
 
 <body x-data="{ darkMode: localStorage.getItem('dark') === 'true'} "
     x-init="$watch('darkMode', val => localStorage.setItem('dark', val))" x-bind:class="{ 'dark': darkMode }"
-    class="dark:bg-[#161b22] bg-gray-50  select-none font-poppins">
+    class="dark:bg-[#161b22] bg-gray-100  select-none font-poppins">
 
-    <div class="flex justify-center w-full pt-5">
-        <label class="relative inline-flex items-center cursor-pointer">
-            <input id="switch" type="checkbox" class="sr-only peer" x-model="darkMode" type="checkbox"
-                @click="darkMode = !darkMode" />
-            <label for="switch" class="hidden"></label>
-            <div
-                class="peer h-6 w-11 rounded-full border bg-slate-200 after:absolute after:left-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-slate-800 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-green-300">
-            </div>
-        </label>
+    <div class="flex justify-end w-full pt-5 pr-5">
+        <button x-show="darkMode" @click="darkMode = !darkMode">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-7 h-7" viewBox="0 0 256 256">
+                <path fill="currentColor"
+                    d="M240 96a8 8 0 0 1-8 8h-16v16a8 8 0 0 1-16 0v-16h-16a8 8 0 0 1 0-16h16V72a8 8 0 0 1 16 0v16h16a8 8 0 0 1 8 8m-96-40h8v8a8 8 0 0 0 16 0v-8h8a8 8 0 0 0 0-16h-8v-8a8 8 0 0 0-16 0v8h-8a8 8 0 0 0 0 16m65.14 94.33A88.07 88.07 0 0 1 105.67 46.86a8 8 0 0 0-10.6-9.06A96 96 0 1 0 218.2 160.93a8 8 0 0 0-9.06-10.6" />
+            </svg>
+        </button>
+
+        <button x-show="!darkMode" @click="darkMode = !darkMode">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-300 w-7 h-7" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="m3.55 19.09l1.41 1.41l1.8-1.79l-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71l1.8 1.79l1.41-1.41l-1.79-1.8M20.45 5l-1.41-1.4l-1.8 1.79l1.42 1.42M13 1h-2v3h2M6.76 5.39L4.96 3.6L3.55 5l1.79 1.81zM1 13h3v-2H1m12 9h-2v3h2" />
+            </svg>
+        </button>
     </div>
-
     <section class="flex items-center justify-center h-screen">
         <div class="text-gray-300   rounded-lg text-sm w-[350px] dark:bg-[#161b22] bg-white border border-[#3f3f46]">
-            <div class="flex flex-row w-full p-4 space-x-3">
+            <div class="flex flex-col items-center justify-center w-full p-4 space-x-3">
                 <img class="w-20 h-20 rounded-2xl border-zinc-700" alt="Sebastián Ríos" src="./images/user.png" />
-                <div class="w-full text-gray-500">
-                    <p
-                        class="w-[200px] dark:text-white text-black  text-lg space-x-1 inline-block overflow-hidden whitespace-nowrap text-ellipsis">
-                        Ivan Maulana
-                    </p>
-                    <p>Tech Enthusiast</p>
-                </div>
+                <p class="text-lg text-black dark:text-white">
+                    Ivan Maulana
+                </p>
+                <p class="text-gray-600 dark:text-gray-400">Tech Enthusiast</p>
             </div>
             <div class="w-full border-b border-[#3f3f46]"></div>
-            <div class="flex flex-col w-full p-4 space-y-4 text-sm text-gray-500">
+            <div class="flex flex-col items-center justify-center w-full p-4 space-y-4 text-sm text-gray-500">
                 <div class="flex items-center space-x-1">
                     <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" fill="currentColor"
                         aria-hidden="true">
@@ -46,6 +47,15 @@
                         </path>
                     </svg>
                     <p class="text-black dark:text-white">Jakarta, Indonesia</p>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 48 48">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M40.5 5.5h-33a2 2 0 0 0-2 2v33a2 2 0 0 0 2 2h33a2 2 0 0 0 2-2v-33a2 2 0 0 0-2-2" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M17 30.985V17l7 7l7-6.979V31M17 17L6.093 6.093M42.5 17.955L30.045 5.5M31 31l10.91 10.91m-23.955.59L5.5 30.045" />
+                    </svg>
+                    <p class="text-black dark:text-white">1143864881 (13615)</p>
                 </div>
             </div>
             <div class="w-full border-b border-[#3f3f46]"></div>
