@@ -1,11 +1,10 @@
 
-
-![Visitors](https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fgithub.com%2FExtenv&labelColor=%23d9e3f0&countColor=%23697689&style=flat)
 <img src="https://raw.githubusercontent.com/extenv/extenv/refs/heads/main/assets/line.gif">
 
-## Hi, Senior 👋
+## Hi, Senior 👋 ![Visitors](https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fgithub.com%2FExtenv&labelColor=%23d9e3f0&countColor=%23697689&style=flat)
 I'am Ivan Maulana, a multiplatform software engineer who likes to  building various useful software for peoples and I also like to read and modify other people's code. I'm interested in the NodeJS environment.
 
+> *If you can be consistent, you can achieve anything — it’s only a matter of time*
 
 ## :trophy: Achievements
 
@@ -43,7 +42,7 @@ I'am Ivan Maulana, a multiplatform software engineer who likes to  building vari
 
 <img src="https://raw.githubusercontent.com/extenv/extenv/refs/heads/main/assets/line.gif">
 
-> *If you can be consistent, you can achieve anything — it’s only a matter of time*
-
+<!--
 > ##  Statistic
 > [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=extenv&theme=tokyonight&layout=compact)](https://github.com/extenv)
+ -->
