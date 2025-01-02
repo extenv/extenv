@@ -1,4 +1,7 @@
+hELLo WoRLD
 
+
+<!--
 <img src="https://raw.githubusercontent.com/extenv/extenv/refs/heads/main/assets/line.gif">
 
 ## Hi, Senior 👋 ![Visitors](https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fgithub.com%2FExtenv&labelColor=%23d9e3f0&countColor=%23697689&style=flat)
@@ -34,14 +37,14 @@ I'am Ivan Maulana, a multiplatform software engineer who likes to  building vari
    <img height="225em" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Extenv&theme=aura"/>
    <img height="225em" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Extenv&theme=aura"/>
 </a><br/>
-<!-- <a href="https://github.com/Extenv">
+ <a href="https://github.com/Extenv">
    <img height="225em" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Extenv&theme=aura"/>
    <img height="225em" src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Extenv&theme=aura&utcOffset=7"/>
-</a> -->
+</a> 
 </p>
 
 <img src="https://raw.githubusercontent.com/extenv/extenv/refs/heads/main/assets/line.gif">
-
+-->
 <!--
 > ##  Statistic
 > [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=extenv&theme=tokyonight&layout=compact)](https://github.com/extenv)
